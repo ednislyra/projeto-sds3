@@ -1,5 +1,6 @@
 package com.devsuperior.dsvendas.service;
 
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,4 +21,5 @@ public class SellerService {
 		List<Seller> result = repository.findAll();
 		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
 	}
+	
 }
